@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --progressAmount: 0%;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto 25%;
+}
+
+#environment-area {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+#topbar, #notification-area {
+    padding: 30px;
+}
+
+
+
+#tree-area {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items:center
+}
+
+.tree {
+    border: 1px solid black;
+    width: 50px;
+    height: 150px;
+}
+
+#magicTree {
+    visibility: hidden;
+}
+
+#enchant3 {
+    visibility: hidden;
+}
+
+#tree5, #tree5_HQ {
+     visibility: hidden;
+}
+
+#stats-area {
+    height: 100vh;
+    border: 1px solid black;
+}
+
+#progress-bar {
+
+    width: 90%;
+    height: 10px;
+    margin: 10px;
+
+    background: linear-gradient(
+        to right,
+        red 0%,
+        red var(--progressAmount), 
+        white 0%,
+        white 100%
+    );
+
+    border: 1px solid black;
+}
+
+#sell-container, #buy-container {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sell-slot, .buy-slot {
+    margin: 2px;
+    border: 1px solid black;
+}
+

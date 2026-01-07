@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main-container">
+
+        <div id="environment-area">
+
+            <div id="topbar">
+                <p>Time until sunset:</p>
+                <div id="timer"></div>
+            </div>
+
+            <div id="tree-area">
+
+                <div class="tree" id="pineTree">Pine Tree</div>
+                <div class="tree" id="oakTree">Oak Tree</div>
+                <div class="tree" id="mapleTree">Maple Tree</div>
+                <div class="tree" id="yewTree">Yew Tree</div>
+                <div class="tree" id="magicTree">Magic Tree</div>
+                
+            </div>
+
+            <div id="notification-area">
+                <div id="notifications"></div>
+                
+            </div>
+
+        </div>
+        
+
+        <div id="stats-area">
+            <h3>Total XP:</h3>
+            <p id="total-xp">0</p>
+            <h3>Level:</h3>
+            <p id="current-level">0</p>
+            <div id="progress-bar"></div>
+            <h3>Gold:</h3>
+            <p id="total-gold"></p>
+
+            <h3>Sell:</h3>
+            <div id="sell-container">
+                <div onclick="sell()" class="sell-slot" id="tree1">
+                    <p>Pine Logs (1gp):</p>
+                    <p id="pineLogCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree1_HQ">
+                    <p>Pine Logs (HQ) (2gp):</p>
+                    <p id="pineLogHqCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree2">
+                    <p>Oak Logs (2gp):</p>
+                    <p id="oakLogCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree2_HQ">
+                    <p>Oak Logs (HQ) (3gp):</p>
+                    <p id="oakLogHqCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree3">
+                    <p>Maple Logs (5gp):</p>
+                    <p id="mapleLogCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree3_HQ">
+                    <p>Maple Logs (HQ) (7gp):</p>
+                    <p id="mapleLogHqCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree4">
+                    <p>Yew Logs (8gp):</p>
+                    <p id="yewLogCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree4_HQ">
+                    <p>Yew Logs (HQ) (10gp):</p>
+                    <p id="yewLogHqCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree5">
+                    <p>Magic Logs (20gp):</p>
+                    <p id="magicLogCount">0</p>
+                </div>
+                <div class="sell-slot" id="tree5_HQ">
+                    <p>Magic Logs (HQ) (30gp):</p>
+                    <p id="magicLogHqCount">0</p>
+                </div>
+
+            </div>
+            <h3>Buy:</h3>
+            <div id="buy-container">
+                <div class="buy-slot" id="woodenAxe">Wooden Axe (50gp)</div>
+                <div class="buy-slot" id="bronzeAxe">Bronze-Axe (150gp)</div>
+                <div class="buy-slot" id="steelAxe">Steel Axe (350gp)</div>
+                <div class="buy-slot" id="vidariteAxe">Vidarite Axe (800gp)</div>
+                <div class="buy-slot" id="enchant1">Level 1 Enchantment (100GP)</div>
+                <div class="buy-slot" id="enchant2">Level 2 Enchantment (300GP)</div>
+                <div class="buy-slot" id="enchant3">Level 3 Enchantment (500GP)</div>
+                <div class="buy-slot" id="buyXp">1000xp (1000GP)</div>
+            </div>
+
+       <h3>Equipped:</h3>
+       <p id="equipped">Hand</p>
+       
+        
+
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
